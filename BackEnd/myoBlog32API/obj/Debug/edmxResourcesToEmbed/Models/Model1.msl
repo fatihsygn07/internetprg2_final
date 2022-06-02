@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB01ModelStoreContainer" CdmEntityContainer="DB01Entities1">
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DB01Model.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Soru">
+      <EntityTypeMapping TypeName="DB01Model.Soru">
+        <MappingFragment StoreEntitySet="Soru">
+          <ScalarProperty Name="SoruId" ColumnName="SoruId" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Icerik" ColumnName="Icerik" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="UyeId" ColumnName="UyeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="DB01Model.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="UyeId" ColumnName="UyeId" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="UyeAdmin" ColumnName="UyeAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yorum">
+      <EntityTypeMapping TypeName="DB01Model.Yorum">
+        <MappingFragment StoreEntitySet="Yorum">
+          <ScalarProperty Name="YorumId" ColumnName="YorumId" />
+          <ScalarProperty Name="YorumIcerik" ColumnName="YorumIcerik" />
+          <ScalarProperty Name="YorumUyeId" ColumnName="YorumUyeId" />
+          <ScalarProperty Name="SoruId" ColumnName="SoruId" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
